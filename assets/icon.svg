@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <!-- Gray DP: code lines in the theme's luminance hierarchy -->
+  <rect x="4" y="4" width="248" height="248" rx="56" fill="#1c1c1c" stroke="#2e2e2e" stroke-width="4"/>
+  <rect x="44" y="58" width="76" height="24" rx="6" fill="#f2f2f2"/>
+  <rect x="132" y="63" width="80" height="14" rx="5" fill="#8a8a8a"/>
+  <rect x="72" y="104" width="52" height="14" rx="5" fill="#bdbdbd"/>
+  <rect x="136" y="104" width="76" height="14" rx="5" fill="#dcdcdc"/>
+  <rect x="136" y="126" width="76" height="5" rx="2.5" fill="#dcdcdc"/>
+  <rect x="72" y="152" width="96" height="14" rx="5" fill="#cfcfcf"/>
+  <rect x="72" y="188" width="128" height="12" rx="5" fill="#5a5a5a"/>
+  <rect x="44" y="214" width="36" height="14" rx="5" fill="#9a9a9a"/>
+</svg>
