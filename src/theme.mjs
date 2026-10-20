@@ -288,15 +288,11 @@ export function buildTheme({ name, type, palette }) {
       'settings.modifiedItemIndicator': gray[400],
       'debugToolBar.background': gray[850],
 
-      // Diagnostics: a transparent foreground disables the wavy squiggle, and the border
-      // color makes VS Code draw a straight (double) underline instead.
-      'editorError.foreground': alpha(signal.error, 0),
-      'editorError.border': signal.error,
-      'editorWarning.foreground': alpha(signal.warning, 0),
-      'editorWarning.border': signal.warning,
-      'editorInfo.foreground': alpha(signal.info, 0),
-      'editorInfo.border': signal.info,
-      // These default to the (now transparent) squiggle colors, so set them explicitly.
+      // Diagnostics. Keep the wavy squiggles: the straight `*.border` underline is drawn
+      // below the line box, so the current-line highlight of the next line hides it.
+      'editorError.foreground': signal.error,
+      'editorWarning.foreground': signal.warning,
+      'editorInfo.foreground': signal.info,
       'editorMarkerNavigationError.background': signal.error,
       'editorMarkerNavigationWarning.background': signal.warning,
       'editorMarkerNavigationInfo.background': signal.info,

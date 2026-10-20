@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3
+
+- Back to wavy squiggles for errors, warnings and info: the straight underline was hidden by the highlight of the line below.
+
 ## 0.1.2
 
 - Errors, warnings and info are underlined with straight lines instead of wavy squiggles.
