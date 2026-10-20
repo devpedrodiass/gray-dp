@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2
+
+- Errors, warnings and info are underlined with straight lines instead of wavy squiggles.
+
 ## 0.1.1
 
 - README: screenshots of every variant and install instructions.

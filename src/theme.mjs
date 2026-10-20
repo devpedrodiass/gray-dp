@@ -288,10 +288,23 @@ export function buildTheme({ name, type, palette }) {
       'settings.modifiedItemIndicator': gray[400],
       'debugToolBar.background': gray[850],
 
-      // Diagnostics
-      'editorError.foreground': signal.error,
-      'editorWarning.foreground': signal.warning,
-      'editorInfo.foreground': signal.info,
+      // Diagnostics: a transparent foreground disables the wavy squiggle, and the border
+      // color makes VS Code draw a straight (double) underline instead.
+      'editorError.foreground': alpha(signal.error, 0),
+      'editorError.border': signal.error,
+      'editorWarning.foreground': alpha(signal.warning, 0),
+      'editorWarning.border': signal.warning,
+      'editorInfo.foreground': alpha(signal.info, 0),
+      'editorInfo.border': signal.info,
+      // These default to the (now transparent) squiggle colors, so set them explicitly.
+      'editorMarkerNavigationError.background': signal.error,
+      'editorMarkerNavigationWarning.background': signal.warning,
+      'editorMarkerNavigationInfo.background': signal.info,
+      'editorOverviewRuler.errorForeground': signal.error,
+      'editorOverviewRuler.warningForeground': signal.warning,
+      'editorOverviewRuler.infoForeground': signal.info,
+      'minimap.errorHighlight': signal.error,
+      'minimap.warningHighlight': signal.warning,
       'problemsErrorIcon.foreground': signal.error,
       'problemsWarningIcon.foreground': signal.warning,
       'problemsInfoIcon.foreground': signal.info,
