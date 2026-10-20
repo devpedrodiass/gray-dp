@@ -1,0 +1,60 @@
+{
+  "name": "gray-dp",
+  "displayName": "Gray DP",
+  "description": "A noir grayscale theme: no hue, real contrast between keywords, functions and variables.",
+  "version": "0.1.0",
+  "publisher": "pedrofaria",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devpedrodiass/gray-dp"
+  },
+  "bugs": {
+    "url": "https://github.com/devpedrodiass/gray-dp/issues"
+  },
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "theme",
+    "gray",
+    "grey",
+    "dark",
+    "light",
+    "noir",
+    "monochrome",
+    "grayscale"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Gray DP",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gray-dp-color-theme.json"
+      },
+      {
+        "label": "Gray DP Black",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gray-dp-black-color-theme.json"
+      },
+      {
+        "label": "Gray DP Light",
+        "uiTheme": "vs",
+        "path": "./themes/gray-dp-light-color-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "watch": "node --watch-path=src scripts/build.mjs",
+    "contrast": "node scripts/contrast.mjs",
+    "package": "npm run build && npx @vscode/vsce package"
+  },
+  "devDependencies": {
+    "vscode-oniguruma": "^2.0.1",
+    "vscode-textmate": "^9.3.2"
+  }
+}

@@ -1,0 +1,9 @@
+/* Card component */
+@import url('reset.css');
+:root { --radius: 8px; }
+.card > h2:hover, #main[data-open="true"] {
+  color: var(--radius);
+  margin: 0 auto !important;
+  background: #1c1c1c;
+}
+@media (max-width: 600px) { .card { display: none; } }

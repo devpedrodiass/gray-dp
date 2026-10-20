@@ -1,0 +1,7 @@
+{
+  "name": "gray-dp",
+  "version": 1.2,
+  "private": true,
+  "tags": ["noir", null],
+  "nested": { "key": "value" }
+}
