@@ -2,7 +2,7 @@
   "name": "gray-dp",
   "displayName": "Gray DP",
   "description": "A noir grayscale theme: no hue, real contrast between keywords, functions and variables.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "DevPedroDias",
   "icon": "assets/icon.png",
   "galleryBanner": {

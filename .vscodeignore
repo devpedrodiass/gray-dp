@@ -7,3 +7,4 @@ samples/**
 assets/*.svg
 node_modules/**
 package-lock.json
+assets/screenshot-*

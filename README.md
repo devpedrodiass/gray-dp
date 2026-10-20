@@ -6,11 +6,17 @@ checked against WCAG contrast.
 
 ## Variants
 
-| Theme | Editor background |
-|---|---|
-| **Gray DP** | `#1c1c1c` — dark gray |
-| **Gray DP Black** | `#000000` — pure black, for OLED |
-| **Gray DP Light** | `#e4e4e4` — light gray, not white |
+### Gray DP — `#1c1c1c`, dark gray
+
+![Gray DP](assets/screenshot-dark.png)
+
+### Gray DP Black — `#000000`, pure black for OLED
+
+![Gray DP Black](assets/screenshot-black.png)
+
+### Gray DP Light — `#e4e4e4`, light gray, not white
+
+![Gray DP Light](assets/screenshot-light.png)
 
 ## Reading the styles
 
@@ -28,6 +34,18 @@ Brightness carries importance: keywords and JSX components are the brightest, th
 literals, types, variables, properties, and finally strings, punctuation and comments.
 
 The only color in the theme is a set of muted signals for errors, warnings, git and the terminal.
+
+## Install
+
+Search for **Gray DP** in the Extensions view, or run:
+
+```sh
+code --install-extension DevPedroDias.gray-dp
+```
+
+Then open *Preferences: Color Theme* (`Cmd+K Cmd+T`) and pick a variant.
+Bold, italic and underline are part of the design — use a font that ships a real bold weight
+(e.g. JetBrains Mono with all weights installed).
 
 ## Development
 

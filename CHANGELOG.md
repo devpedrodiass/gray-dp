@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.1
+
+- README: screenshots of every variant and install instructions.
+
 ## 0.1.0
 
 - Noir palette: neutral grays only, roles separated by luminance and font style.
